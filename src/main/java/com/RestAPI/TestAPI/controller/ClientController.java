@@ -3,6 +3,7 @@ package com.RestAPI.TestAPI.controller;
 import com.RestAPI.TestAPI.model.Client;
 import com.RestAPI.TestAPI.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class ClientController {
         return clientRepository.findAll();
     }
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Client add(@RequestBody Client client) {
         return clientRepository.save(client);
     }
