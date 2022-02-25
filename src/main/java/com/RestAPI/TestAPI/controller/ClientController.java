@@ -3,7 +3,6 @@ package com.RestAPI.TestAPI.controller;
 import com.RestAPI.TestAPI.model.Client;
 import com.RestAPI.TestAPI.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
